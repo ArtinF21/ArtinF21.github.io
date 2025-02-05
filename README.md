@@ -2,8 +2,6 @@
 
 <!--Need to fix the edge issue-->
 
-<title>Portfolio</title>
-
 <a href="index.html" style="color:white;">Home page</a>
 <a href="portfolio.html" style="color:white;">Portfolio</a>
 <a href="aboutme.html" style="color:white;" >About me</a>
