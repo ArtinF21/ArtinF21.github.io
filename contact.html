@@ -39,7 +39,7 @@
 
     .container {
       padding: 3rem 2rem;
-      max-width: 600px;
+      max-width: 800px;
       margin: auto;
     }
 
@@ -53,36 +53,14 @@
       margin-bottom: 2rem;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    input, textarea {
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
-    }
-
-    .cta-button {
-      background-color: #0275d8;
-      color: white;
-      padding: 0.75rem;
-      font-size: 1rem;
+    iframe {
+      width: 100%;
+      height: 750px;
       border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      width: fit-content;
-    }
-
-    .cta-button:hover {
-      background-color: #025aa5;
     }
 
     .discord-button {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       background-color: #5865F2;
       color: white;
       padding: 0.75rem 1rem;
@@ -115,16 +93,12 @@
 
   <div class="container">
     <h2>Contact Us</h2>
-    <p>Questions? Ideas? Want to get involved? Fill out the form below or reach out directly. We’d love to hear from you.</p>
+    <p>Have questions, ideas, or want to get involved? Fill out the form below and we’ll be in touch soon.</p>
 
-    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button class="cta-button" type="submit">Send Message</button>
-    </form>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLL1WDtpanodZvtbIG5tgL7p6-zCJu9GXYxZKihB73yxJ3YQ/viewform?embedded=true" 
+      frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-    <!-- Replace this link with your real Discord invite -->
+    <!-- Optional: Add your real Discord invite link below -->
     <a href="https://discord.gg/YOUR_INVITE_CODE" target="_blank" class="discord-button">
       Join Our Discord
     </a>
