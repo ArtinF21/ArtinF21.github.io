@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vitals and Voices</title>
   <style>
-    /* Fix horizontal scroll and box-sizing */
     html, body {
       margin: 0;
       padding: 0;
@@ -50,7 +49,7 @@
     .hero {
       position: relative;
       height: 90vh;
-      background-color: #333; /* fallback color */
+      background-color: #333;
       background-image: url('pexels-william-fortunato-6140683.png');
       background-size: cover;
       background-position: center;
@@ -117,6 +116,39 @@
       height: auto;
     }
 
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1.5rem;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      width: 280px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #0d1321;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -156,6 +188,24 @@
   <section class="section">
     <h2>Get Involved</h2>
     <p>Want to share your story, research, or perspective? Submit your work and become part of a growing community of youth voices in health.</p>
+  </section>
+
+  <section class="section featured">
+    <h2>Featured Voices</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>"Healing Beyond the Hospital"</h3>
+        <p>Exploring how storytelling can empower patients and providers alike. <em>- Alex K., NY</em></p>
+      </div>
+      <div class="card">
+        <h3>"Mental Health in Med School"</h3>
+        <p>A candid take on what it means to support future physicians. <em>- Jamie L., CA</em></p>
+      </div>
+      <div class="card">
+        <h3>"The Ethics of AI in Surgery"</h3>
+        <p>Balancing innovation and humanity in the operating room. <em>- Priya S., TX</em></p>
+      </div>
+    </div>
   </section>
 
   <footer>
