@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vitals and Voices</title>
   <style>
     body {
@@ -38,38 +38,27 @@
     }
 
     .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
-      padding: 4rem 2rem;
-      background-color: #ffffff;
+      padding: 3rem 2rem;
     }
 
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
+    .hero img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
     }
 
-    .cta-button {
-      background-color: #0275d8;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
+    .section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
     }
 
-    .cta-button:hover {
-      background-color: #025aa5;
+    .section img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
     }
 
     footer {
@@ -78,17 +67,6 @@
       background-color: #eee;
       font-size: 0.9rem;
       color: #777;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav {
-        margin-top: 1rem;
-      }
     }
   </style>
 </head>
@@ -105,9 +83,21 @@
   </header>
 
   <section class="hero">
-    <h2>Where Future Minds Meet Medicine</h2>
-    <p>Vitals and Voices is a platform for high school and college students to share their ideas, insights, and passions about the future of healthcare, public health, and innovation in medicine.</p>
-    <a href="#" class="cta-button">Get Involved</a>
+    <img src="https://images.unsplash.com/photo-1576765607924-bc3e435c8d6d" alt="Group of students studying" />
+    <h2>Welcome to Vitals and Voices</h2>
+    <p>A student-led platform for sharing ideas, experiences, and visions in health and medicine.</p>
+  </section>
+
+  <section class="section">
+    <h2>Why We Write</h2>
+    <p>We believe students have powerful perspectives on the future of medicine. Through essays, reflections, and stories, we give voice to the next generation of healers.</p>
+    <img src="https://images.unsplash.com/photo-1588776814546-ec6d89d7efb8" alt="Student writing at desk" />
+  </section>
+
+  <section class="section">
+    <h2>Get Involved</h2>
+    <p>Want to share your story, research, or perspective? Submit your work and become part of a growing community of youth voices in health.</p>
+    <img src="https://images.unsplash.com/photo-1588776814602-6718b04c0476" alt="Volunteers or student collaboration" />
   </section>
 
   <footer>
