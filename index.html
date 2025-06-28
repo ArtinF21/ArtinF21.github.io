@@ -48,6 +48,7 @@
 
     .hero {
       position: relative;
+      min-height: 90vh; /* ensures consistent height */
       height: 90vh;
       background-color: #333;
       background-image: url('Youth Frontier Journal of Research.png');
@@ -58,6 +59,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      overflow: hidden; /* prevent content overflow */
     }
 
     .hero-overlay {
@@ -74,7 +76,8 @@
     .hero-content {
       z-index: 1;
       max-width: 700px;
-      margin-top: 300px; 
+      margin-top: 300px;
+      min-height: 150px; /* reserve vertical space to reduce layout shift */
     }
 
     .hero-content h2 {
