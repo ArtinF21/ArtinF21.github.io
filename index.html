@@ -43,26 +43,38 @@
       position: relative;
       height: 90vh;
       background: url('Youth Frontier Journal of Research.png') center/cover no-repeat;
-      color: white;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
-    }
-
-    .hero-overlay {
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 100%;
-      padding: 3rem 2rem;
+      color: white;
       text-align: center;
     }
 
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.45);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 4rem 2rem 2rem;
+      max-width: 800px;
+    }
+
     .hero-content h2 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 1rem;
     }
 
     .hero-content p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
+      line-height: 1.6;
       margin-bottom: 2rem;
     }
 
@@ -75,6 +87,7 @@
       text-decoration: none;
       font-weight: bold;
       transition: background-color 0.3s ease;
+      margin-top: 1rem;
     }
 
     .hero-button:hover {
@@ -148,12 +161,11 @@
   </header>
 
   <section class="hero">
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <h2>Elevating Youth Voices in Science</h2>
-        <p>Where students write, reflect, and reshape the future of health, medicine, and science — one story at a time.</p>
-        <a href="submissions.html" class="hero-button">Submit Your Story</a>
-      </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Elevating Youth Voices in Science</h2>
+      <p>Where students write, reflect, and reshape the future of health, medicine, and science — one story at a time.</p>
+      <a href="submissions.html" class="hero-button">Submit Your Story</a>
     </div>
   </section>
 
