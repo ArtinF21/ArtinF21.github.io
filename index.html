@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vitals and Voices</title>
+  <title>Youth Frontier Journal of Research</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
       color: #333;
@@ -38,27 +40,90 @@
     }
 
     .hero {
-      text-align: center;
-      padding: 3rem 2rem;
+      position: relative;
+      height: 90vh;
+      background: url('Youth Frontier Journal of Research.png') center/cover no-repeat;
+      color: white;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
     }
 
-    .hero img {
-      max-width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .hero-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
       margin-bottom: 2rem;
+    }
+
+    .hero-button {
+      background-color: #0275d8;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-button:hover {
+      background-color: #025aa5;
     }
 
     .section {
       padding: 3rem 2rem;
       max-width: 900px;
       margin: auto;
+      text-align: center;
     }
 
-    .section img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 1rem;
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .category-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .category {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      width: 260px;
+    }
+
+    .category h3 {
+      margin-top: 0;
+      color: #0d1321;
+    }
+
+    .testimonial {
+      font-style: italic;
+      color: #555;
+      margin: 1rem auto;
+      max-width: 700px;
     }
 
     footer {
@@ -73,7 +138,7 @@
 <body>
 
   <header>
-    <h1>Vitals and Voices</h1>
+    <h1>Youth Frontier Journal of Research</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="submissions.html">Submissions</a>
@@ -83,25 +148,42 @@
   </header>
 
   <section class="hero">
-    <img src="https://images.unsplash.com/photo-1576765607924-bc3e435c8d6d" alt="Group of students studying" />
-    <h2>Welcome to Vitals and Voices</h2>
-    <p>A student-led platform for sharing ideas, experiences, and visions in health and medicine.</p>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h2>Elevating Youth Voices in Science</h2>
+        <p>Where students write, reflect, and reshape the future of health, medicine, and science — one story at a time.</p>
+        <a href="submissions.html" class="hero-button">Submit Your Story</a>
+      </div>
+    </div>
   </section>
 
   <section class="section">
-    <h2>Why We Write</h2>
-    <p>We believe students have powerful perspectives on the future of medicine. Through essays, reflections, and stories, we give voice to the next generation of healers.</p>
-    <img src="https://images.unsplash.com/photo-1588776814546-ec6d89d7efb8" alt="Student writing at desk" />
+    <h2>Our Mission</h2>
+    <p>Youth Frontier Journal of Research empowers young scientists, writers, and thinkers to share their unique perspectives on the future of science, technology, ethics, and healthcare. We’re redefining what it means to engage youth in professional dialogue.</p>
   </section>
 
   <section class="section">
-    <h2>Get Involved</h2>
-    <p>Want to share your story, research, or perspective? Submit your work and become part of a growing community of youth voices in health.</p>
-    <img src="https://images.unsplash.com/photo-1588776814602-6718b04c0476" alt="Volunteers or student collaboration" />
+    <h2>Submission Categories</h2>
+    <div class="category-grid">
+      <div class="category">
+        <h3>Reflections</h3>
+        <p>Personal insights and narratives related to science, health, ethics, or your academic journey. Minimum 500 words.</p>
+      </div>
+      <div class="category">
+        <h3>Features & Professional Papers</h3>
+        <p>Research summaries, opinion pieces with evidence, interviews, and analytical essays. Minimum 1,500 words.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What Our Writers Say</h2>
+    <p class="testimonial">"Publishing here helped me realize that my voice matters in science — even as a student." — Priya S., California</p>
+    <p class="testimonial">"This journal gave me the space to explore the intersection of storytelling and healthcare." — Daniel L., Texas</p>
   </section>
 
   <footer>
-    &copy; 2025 Vitals and Voices. All rights reserved.
+    &copy; 2025 Youth Frontier Journal of Research. All rights reserved.
   </footer>
 
 </body>
