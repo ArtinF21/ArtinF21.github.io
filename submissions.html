@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Submissions | Youth Frontier Journal of Research</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,6 +21,7 @@
       color: white;
       padding: 1rem 2rem;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
     }
@@ -24,6 +29,10 @@
     header h1 {
       margin: 0;
       font-size: 1.8rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
     }
 
     nav a {
@@ -97,6 +106,52 @@
       font-size: 0.9rem;
       color: #777;
     }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 0.5rem 1rem 0 0;
+      }
+
+      .container {
+        padding: 2rem 1rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      p, details ul, summary {
+        font-size: 1rem;
+      }
+
+      .cta-button {
+        font-size: 0.95rem;
+        padding: 0.65rem 1.25rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      .cta-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
@@ -149,7 +204,6 @@
         <li>Images, charts, or figures are encouraged (must be your own or properly credited).</li>
       </ul>
     </details>
-
   </div>
 
   <footer>
