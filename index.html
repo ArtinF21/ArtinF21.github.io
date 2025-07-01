@@ -19,6 +19,7 @@
       color: white;
       padding: 1rem 2rem;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
     }
@@ -26,6 +27,13 @@
     header h1 {
       margin: 0;
       font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.5rem;
     }
 
     nav a {
@@ -45,10 +53,11 @@
       height: 90vh;
       background: url('Youth Frontier Journal of Research.png') center/cover no-repeat;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
       color: white;
       text-align: center;
+      padding-bottom: 6rem;
     }
 
     .hero-overlay {
@@ -64,7 +73,7 @@
     .hero-content {
       position: relative;
       z-index: 1;
-      padding: 4rem 2rem 2rem;
+      padding: 2rem;
       max-width: 800px;
     }
 
@@ -89,6 +98,7 @@
       font-weight: bold;
       transition: background-color 0.3s ease;
       margin-top: 1rem;
+      display: inline-block;
     }
 
     .hero-button:hover {
@@ -161,6 +171,55 @@
       font-size: 0.9rem;
       color: #777;
     }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 0.5rem;
+        justify-content: flex-start;
+      }
+
+      .hero-content h2 {
+        font-size: 2.2rem;
+      }
+
+      .hero-content p {
+        font-size: 1.1rem;
+      }
+
+      .category {
+        width: 90%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content h2 {
+        font-size: 1.8rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+
+      .hero-button {
+        padding: 0.65rem 1.2rem;
+        font-size: 0.95rem;
+      }
+
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -215,7 +274,6 @@
 
   <script>
     const sections = document.querySelectorAll('.section');
-
     const revealSection = () => {
       sections.forEach(section => {
         const rect = section.getBoundingClientRect();
@@ -224,7 +282,6 @@
         }
       });
     };
-
     window.addEventListener('scroll', revealSection);
     window.addEventListener('load', revealSection);
   </script>
