@@ -180,6 +180,11 @@
         justify-content: flex-start;
       }
 
+      nav a {
+        margin: 0.5rem 1rem 0 0;
+        font-size: 1rem;
+      }
+
       .hero-content p {
         font-size: 1.1rem;
       }
@@ -190,22 +195,52 @@
     }
 
     @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.4rem;
+        line-height: 1.5;
+      }
+
+      nav a {
+        margin-left: 0.75rem;
+        font-size: 0.9rem;
+      }
+
+      .container {
+        padding: 1.5rem 1rem;
+      }
+
+      .hero-content {
+        margin-top: 60px;
+        padding: 1.5rem;
+      }
+
       .hero-content p {
         font-size: 1rem;
       }
 
       .hero-button {
         padding: 0.65rem 1.2rem;
-        font-size: 0.95rem;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
       }
 
-      header h1 {
+      .section h2 {
         font-size: 1.4rem;
       }
 
-      nav a {
-        margin-left: 1rem;
-        font-size: 0.9rem;
+      .section p {
+        font-size: 0.95rem;
+      }
+
+      .category-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .category {
+        width: 100%;
+        margin-bottom: 1.5rem;
       }
     }
   </style>
