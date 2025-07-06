@@ -33,6 +33,9 @@
 
     nav {
       margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     nav a {
@@ -77,6 +80,11 @@
       border-radius: 8px;
       display: inline-block;
       font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .discord-button:hover {
+      background-color: #4752c4;
     }
 
     footer {
@@ -96,12 +104,12 @@
 
       nav {
         margin-top: 1rem;
-        display: flex;
-        flex-wrap: wrap;
+        justify-content: flex-start;
       }
 
       nav a {
         margin: 0.5rem 1rem 0 0;
+        font-size: 1rem;
       }
 
       h2 {
@@ -124,6 +132,7 @@
     @media (max-width: 480px) {
       header h1 {
         font-size: 1.4rem;
+        line-height: 1.5;
       }
 
       iframe {
@@ -133,6 +142,8 @@
       .discord-button {
         width: 100%;
         text-align: center;
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
       }
     }
   </style>
@@ -153,7 +164,7 @@
     <h2>Contact Us</h2>
     <p>Have questions, ideas, or want to get involved? Fill out the form below and we’ll be in touch soon.</p>
 
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLL1WDtpanodZvtbIG5tgL7p6-zCJu9GXYxZKihB73yxJ3YQ/viewform?embedded=true" 
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLL1WDtpanodZvtbIG5tgL7p6-zCJu9GXYxZKihB73yxJ3YQ/viewform?embedded=true"
       frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     
     <a href="https://discord.gg/BJ7qsajn" target="_blank" class="discord-button">
