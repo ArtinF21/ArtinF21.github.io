@@ -33,6 +33,8 @@
 
     nav {
       margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -116,12 +118,12 @@
 
       nav {
         margin-top: 1rem;
-        display: flex;
-        flex-wrap: wrap;
       }
 
       nav a {
-        margin: 0.5rem 1rem 0 0;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
       }
 
       .container {
@@ -145,11 +147,28 @@
     @media (max-width: 480px) {
       header h1 {
         font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+
+      nav a {
+        font-size: 0.9rem;
+        margin-left: 0.8rem;
       }
 
       .cta-email {
         width: 100%;
         text-align: center;
+        padding: 0.75rem;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      summary {
+        font-size: 1rem;
       }
     }
   </style>
@@ -170,7 +189,10 @@
     <h2>Submit Your Voice</h2>
     <p>We’re looking for passionate, insightful, and creative student perspectives on science, medicine, mental health, ethics, engineering, and more. Whether it’s a personal narrative, an opinion piece, or a research-backed article, your voice matters here.</p>
 
-    <p><strong>To submit:</strong> Please email your article as a PDF or Google Doc to <a href="mailto:youthfrontierjournal@gmail.com" class="cta-email">youthfrontierjournal@gmail.com</a>. Include your name, school, and grade or year in the email. Submissions are reviewed weekly, and if accepted, we’ll follow up with next steps!</p>
+    <p><strong>To submit:</strong> Please email your article as a PDF or Google Doc to 
+      <a href="mailto:youthfrontierjournal@gmail.com" class="cta-email">youthfrontierjournal@gmail.com</a>. 
+      Include your name, school, and grade or year in the email. Submissions are reviewed weekly, and if accepted, we’ll follow up with next steps!
+    </p>
 
     <h2>Submission Guidelines</h2>
     <p>We welcome submissions on any scientific topic, from medicine and health to physics, engineering, ethics, and beyond. Our goal is to amplify youth voices in science by publishing thoughtful, well-researched, and original work.</p>
