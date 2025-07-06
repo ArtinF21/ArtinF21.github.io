@@ -49,6 +49,11 @@
       text-decoration: underline;
     }
 
+    nav a[aria-current="page"] {
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
     .container {
       padding: 3rem 2rem;
       max-width: 800px;
@@ -65,14 +70,8 @@
       margin-bottom: 2rem;
     }
 
-    iframe {
-      width: 100%;
-      height: 750px;
-      border: none;
-    }
-
     .discord-button {
-      margin-top: 1.5rem;
+      margin-top: 0.75rem;
       background-color: #5865F2;
       color: white;
       padding: 0.75rem 1rem;
@@ -120,10 +119,6 @@
         font-size: 1rem;
       }
 
-      iframe {
-        height: 600px;
-      }
-
       .container {
         padding: 2rem 1rem;
       }
@@ -133,10 +128,6 @@
       header h1 {
         font-size: 1.4rem;
         line-height: 1.5;
-      }
-
-      iframe {
-        height: 500px;
       }
 
       .discord-button {
@@ -156,20 +147,19 @@
       <a href="index.html">Home</a>
       <a href="submissions.html">Submissions</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" aria-current="page">Contact</a>
     </nav>
   </header>
 
   <div class="container">
     <h2>Contact Us</h2>
-    <p>Have questions, ideas, or want to get involved? Fill out the form below and we’ll be in touch soon.</p>
-
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLL1WDtpanodZvtbIG5tgL7p6-zCJu9GXYxZKihB73yxJ3YQ/viewform?embedded=true"
-      frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <p>Have questions, ideas, or want to get involved? Email us at <a href="mailto:youthfrontierjournal@gmail.com">youthfrontierjournal@gmail.com</a> and we’ll be in touch soon.</p>
     
-    <a href="https://discord.gg/BJ7qsajn" target="_blank" class="discord-button">
-      Join Our Discord
-    </a>
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <a href="https://discord.gg/BJ7qsajn" target="_blank" rel="noopener noreferrer" class="discord-button">
+        Join Our Discord
+      </a>
+    </div>
   </div>
 
   <footer>
