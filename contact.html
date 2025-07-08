@@ -77,15 +77,19 @@
       margin: 1rem 0 1rem 0; /* balanced top & bottom margins */
     }
 
+    /* Increased Discord button size */
     .discord-button {
       background-color: #5865F2;
       color: white;
-      padding: 0.75rem 1rem;
+      padding: 1.1rem 2rem;  /* increased padding */
       text-decoration: none;
       border-radius: 8px;
       display: inline-block;
       font-weight: bold;
+      font-size: 1.25rem;  /* increased font size */
       transition: background-color 0.3s ease;
+      min-width: 220px;
+      box-sizing: border-box;
     }
 
     .discord-button:hover {
@@ -170,8 +174,9 @@
       .discord-button {
         width: 100%;
         text-align: center;
-        padding: 0.7rem 1rem;
-        font-size: 1rem;
+        padding: 1rem 1rem;
+        font-size: 1.1rem;
+        min-width: auto;
       }
     }
   </style>
