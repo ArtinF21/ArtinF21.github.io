@@ -168,6 +168,48 @@
       color: #777;
     }
 
+    /* Expand/Collapse paper styles */
+    .paper-title {
+      cursor: pointer;
+      color: #0066cc;
+      font-weight: bold;
+      margin-bottom: 0.2em;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      user-select: none;
+    }
+    .paper-preview {
+      font-style: italic;
+      margin-bottom: 1em;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .paper-content {
+      display: none;
+      border-left: 3px solid #0066cc;
+      padding-left: 1em;
+      margin-bottom: 3em;
+      text-align: left;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #fff;
+      padding: 1em 2em;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,102,204,0.1);
+    }
+
+    .paper-content h4 {
+      color: #0d1321;
+      margin-top: 1em;
+    }
+
+    .paper-content ul {
+      padding-left: 1.25em;
+    }
+
     /* Responsive styles */
     @media (max-width: 768px) {
       header {
@@ -191,6 +233,12 @@
 
       .category {
         width: 90%;
+      }
+
+      .paper-title, .paper-preview, .paper-content {
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
       }
     }
 
@@ -243,7 +291,7 @@
         margin-bottom: 1.5rem;
       }
 
-      /* Added mobile-friendly background image fixes */
+      /* Mobile-friendly background image fixes */
       .hero {
         background-position: top center;
         height: 65vh;
@@ -277,23 +325,38 @@
   </section>
 
   <section class="section">
-    <h2>Submission Categories</h2>
-    <div class="category-grid">
-      <div class="category">
-        <h3>Reflections</h3>
-        <p>Personal insights and narratives related to science, health, ethics, or your academic journey. Minimum 500 words.</p>
-      </div>
-      <div class="category">
-        <h3>Features & Professional Papers</h3>
-        <p>Research summaries, opinion pieces with evidence, interviews, and analytical essays. Minimum 1,500 words.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
     <h2>What Our Writers Say</h2>
     <p class="testimonial">"Publishing here helped me realize that my voice matters in science — even as a student." — Priya S., California</p>
     <p class="testimonial">"This journal gave me the space to explore the intersection of storytelling and healthcare." — Daniel L., Texas</p>
+  </section>
+
+  <section class="section" aria-label="Featured Research Paper">
+    <h2>Featured Research Paper</h2>
+    <h3 class="paper-title" onclick="togglePaper()" tabindex="0" onkeypress="if(event.key==='Enter'){togglePaper();}">
+      Rh-null Blood Group: A Comprehensive Review of Its Molecular Basis, Clinical Significance, and Implications for Transfusion Medicine ▼
+    </h3>
+    <p class="paper-preview">
+      <strong>Aim:</strong> The aim of this paper is to provide a comprehensive overview of the Rh-null blood group by elucidating its molecular genetic basis, hematological and clinical manifestations...
+    </p>
+    <div id="paper-content" class="paper-content" aria-hidden="true">
+      <h4>Abstract</h4>
+      <p>The Rh-null blood group is an exceedingly rare phenotype marked by the complete absence of all Rh antigens on the surface of red blood cells. Recognized as one of the scarcest and most clinically significant blood types worldwide, Rh-null blood poses distinctive challenges in transfusion medicine and hematology. This review synthesizes current knowledge regarding the molecular genetics, hematological characteristics, clinical implications, and transfusion management associated with the Rh-null phenotype. With fewer than 50 individuals documented globally, this blood type has been dubbed "golden blood" for its rarity and value in transfusion support.</p>
+
+      <h4>1. Introduction</h4>
+      <p>The Rh blood group system, second in importance only to the ABO system, consists of over 50 antigens, of which D, C, c, E, and e are the most clinically significant. These antigens are integral membrane proteins that contribute to red cell membrane integrity and function. They also play a key role in maintaining the shape and flexibility of red blood cells, which is vital for their circulation through microvasculature. The clinical importance of the Rh system primarily stems from its strong immunogenicity—especially the D antigen—which is a major cause of hemolytic disease of the fetus and newborn and hemolytic transfusion reactions.</p>
+
+      <!-- Add the remaining sections similarly -->
+
+      <h4>7. Conclusion</h4>
+      <p>The Rh-null blood group is one of the rarest and most clinically complex blood types, with fewer than 50 known cases worldwide. The complete absence of Rh antigens leads to unique transfusion and hematological challenges. These individuals face a lifetime dependence on an extremely limited donor pool and require highly specialized care, planning, and international coordination.</p>
+
+      <h4>Bibliography</h4>
+      <ul>
+        <li><a href="https://doi.org/10.1111/j.1365-3148.2008.00877.x" target="_blank" rel="noopener noreferrer">Daniels, G., Poole, J., et al. (2009). The clinical significance of blood group antibodies. Transfusion Medicine.</a></li>
+        <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK2267/" target="_blank" rel="noopener noreferrer">Dean, L. (2005). The Rh blood group. NCBI Bookshelf.</a></li>
+        <!-- Add other bibliography items -->
+      </ul>
+    </div>
   </section>
 
   <footer>
@@ -312,6 +375,21 @@
     };
     window.addEventListener('scroll', revealSection);
     window.addEventListener('load', revealSection);
+
+    function togglePaper() {
+      const content = document.getElementById('paper-content');
+      const title = document.querySelector('.paper-title');
+      const isVisible = content.style.display === 'block';
+      if (isVisible) {
+        content.style.display = 'none';
+        title.textContent = 'Rh-null Blood Group: A Comprehensive Review of Its Molecular Basis, Clinical Significance, and Implications for Transfusion Medicine ▼';
+        content.setAttribute('aria-hidden', 'true');
+      } else {
+        content.style.display = 'block';
+        title.textContent = 'Rh-null Blood Group: A Comprehensive Review of Its Molecular Basis, Clinical Significance, and Implications for Transfusion Medicine ▲';
+        content.setAttribute('aria-hidden', 'false');
+      }
+    }
   </script>
 </body>
 </html>
