@@ -174,6 +174,8 @@
       padding: 1.2rem;
       margin-bottom: 1.5rem;
       font-size: 1rem;
+      /* Allow details to fully expand without clipping */
+      overflow: visible;
     }
 
     .submission-dropdown summary {
@@ -181,14 +183,16 @@
       font-size: 1.1rem;
       cursor: pointer;
       outline: none;
+      /* prevent truncation on summary line */
+      white-space: normal;
     }
 
     .submission-content {
       padding-top: 0.75rem;
       font-size: 1rem;
       line-height: 1.6;
-      white-space: normal;
-      overflow: visible;
+      white-space: normal;  /* Allow multiline text */
+      overflow: visible;    /* Show all content */
       word-break: break-word;
     }
 
