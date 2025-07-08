@@ -160,80 +160,44 @@
       max-width: 700px;
     }
 
+    .submission-dropdown {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      text-align: left;
+    }
+
+    .submission-dropdown details {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1.2rem;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+
+    .submission-dropdown summary {
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .submission-content {
+      padding-top: 0.75rem;
+      font-size: 1rem;
+      line-height: 1.6;
+      white-space: normal;
+      overflow: visible;
+      word-break: break-word;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
       background-color: #eee;
       font-size: 0.9rem;
       color: #777;
-    }
-
-    .submission-dropdown {
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem 1.5rem;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      font-size: 1rem;
-      text-align: left;
-      overflow-wrap: break-word;
-    }
-
-    .submission-dropdown summary {
-      font-weight: 600;
-      font-size: 1.15rem;
-      cursor: pointer;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.5rem 0;
-    }
-
-    .submission-dropdown summary::marker {
-      display: none;
-    }
-
-    .submission-dropdown[open] summary {
-      border-bottom: 1px solid #eee;
-      margin-bottom: 1rem;
-    }
-
-    .submission-dropdown summary::after {
-      content: '▼';
-      font-size: 0.9rem;
-      transition: transform 0.3s ease;
-      margin-left: 0.5rem;
-    }
-
-    .submission-dropdown[open] summary::after {
-      transform: rotate(180deg);
-    }
-
-    .submission-content {
-      padding-top: 0.5rem;
-    }
-
-    .submission-content h4 {
-      margin-top: 1.25rem;
-      font-size: 1.1rem;
-      color: #0d1321;
-    }
-
-    .submission-content ul {
-      padding-left: 1.25rem;
-    }
-
-    .submission-content a {
-      color: #0275d8;
-      text-decoration: none;
-      word-break: break-word;
-    }
-
-    .submission-content a:hover {
-      text-decoration: underline;
     }
 
     /* Responsive styles */
@@ -259,25 +223,6 @@
 
       .category {
         width: 90%;
-      }
-
-      .submission-dropdown {
-        padding: 1rem;
-        margin: 1.5rem 1rem;
-      }
-
-      .submission-dropdown summary {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .submission-dropdown summary::after {
-        align-self: flex-end;
-        margin-top: 0.5rem;
-      }
-
-      .submission-content {
-        font-size: 0.95rem;
       }
     }
 
@@ -377,30 +322,18 @@
   </section>
 
   <section class="section">
-    <h2>Featured Research Paper</h2>
-    <details class="submission-dropdown">
-      <summary>
-        Rh-null Blood Group: A Comprehensive Review of Its Molecular Basis, Clinical Significance, and Implications for Transfusion Medicine
-      </summary>
-      <div class="submission-content">
-        <p><strong>Abstract:</strong> The Rh-null blood group is an exceedingly rare phenotype marked by the complete absence of all Rh antigens on the surface of red blood cells...</p>
-        <h4>1. Introduction</h4>
-        <p>The Rh blood group system, second in importance only to the ABO system...</p>
-        <h4>7. Conclusion</h4>
-        <p>The Rh-null blood group is one of the rarest and most clinically complex blood types...</p>
-        <h4>Bibliography</h4>
-        <ul>
-          <li><a href="https://doi.org/10.1111/j.1365-3148.2008.00877.x" target="_blank">Daniels, G., Poole, J., et al. (2008)...</a></li>
-          <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK2267/" target="_blank">Dean, L. (2005). The Rh blood group...</a></li>
-        </ul>
-      </div>
-    </details>
-  </section>
-
-  <section class="section">
     <h2>What Our Writers Say</h2>
     <p class="testimonial">"Publishing here helped me realize that my voice matters in science — even as a student." — Priya S., California</p>
     <p class="testimonial">"This journal gave me the space to explore the intersection of storytelling and healthcare." — Daniel L., Texas</p>
+  </section>
+
+  <section class="submission-dropdown">
+    <details>
+      <summary>Rh-null Blood Group: A Comprehensive Review of Its Molecular Basis, Clinical Significance, and Implications for Transfusion Medicine</summary>
+      <div class="submission-content">
+        <p><strong>Abstract:</strong> The Rh-null blood group is an exceedingly rare phenotype marked by the complete absence of all Rh antigens on the surface of red blood cells... [Include more content here as needed]</p>
+      </div>
+    </details>
   </section>
 
   <footer>
