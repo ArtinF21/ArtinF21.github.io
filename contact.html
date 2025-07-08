@@ -65,14 +65,16 @@
       margin-bottom: 1rem;
     }
 
-    p {
+    /* Increase space below paragraph for more gap above Discord button */
+    .container p {
       font-size: 1.1rem;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem; /* increased from 2rem */
     }
 
+    /* Reduce bottom margin of Discord button container for less gap below it */
     .discord-button-container {
       text-align: center;
-      margin: 1rem 0 1.5rem 0;
+      margin: 1rem 0 1rem 0; /* balanced top & bottom margins */
     }
 
     .discord-button {
@@ -150,7 +152,7 @@
         font-size: 1.6rem;
       }
 
-      p {
+      .container p {
         font-size: 1rem;
       }
 
